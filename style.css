@@ -1,0 +1,270 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width:1260px;
+}
+.menu-container{
+    padding: 4rem 0 0 ;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E8EFF9;
+    position: fixed;
+    inset: 0;
+    transform: translateX(110%);
+    transition: 0.5s ease-in-out;
+}
+
+
+
+input:checked + *{
+    transform: translateX(0);
+    
+}
+input{
+    display: none;
+
+}
+
+footer{
+    background: url('/assets/bgs/footer-bg.png') center/cover no-repeat ;
+    height: 40rem;
+    width: auto;
+    
+
+}
+
+header{
+    background:url('./assets/bgs/head-bg.png') center/cover no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+.header_container {
+    width: 100%;
+    display: flex;
+    gap: 22.0625rem; 
+    flex-direction: column;
+}
+.top_header {
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3rem;
+    padding: 2.7rem 0 0;
+
+}
+.burger{
+    background: url('/assets/icons/Icon-Burger-menu.png');
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: 0.3s;
+}
+.burger:hover{
+    background: url('/assets/icons/Icon-Burger-menu-hover.png');
+    
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    background: url('/assets/icons/Icon-Close.png');
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+li {
+    width: fit-content;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0 0 2rem;
+    font-family: 'Inter';
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+ul{
+    padding:4rem 0 0 0;
+    list-style-type: none;
+}
+
+li::before{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1px;
+    top: 1.9rem;
+    right: 100%;
+    left: 0;
+    background-color: #000000;
+    transition: 1s;
+}
+li:hover::before{
+    left: 0;
+    right: 0; 
+}
+
+
+
+
+.hero{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    
+}
+.recommended{
+    display: flex;
+    flex-direction: column;
+}
+.rec{
+   font-family: 'Inter'; 
+   font-size: 3rem;
+   text-align: center;
+   margin:5.9rem 0 4rem 0;
+   font-weight: 700px;
+}
+.card_wraper {
+    display: flex;
+    justify-content: space-between;
+}
+h4{
+   font-family: 'Inter'; 
+   font-size: 1rem;
+   font-weight: 700;
+}
+p{
+    font-family: 'Inter';
+    font-size: 1rem;  
+}
+.speaker{
+    gap: 0.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.bottom_text{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+h2{
+   font-family: 'Inter'; 
+   font-size: 3rem;
+   font-weight: 700;
+}
+.bottom_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5rem 0 0 ;
+}
+.text_adds{
+    padding: 0 0 7.5rem 0;
+}
+.adds {
+    display: flex;
+    flex-direction: column;
+    padding: 0 14.5rem 40px 0;
+    gap: 1rem;
+}
+
+
+
+.fOTO{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255); 
+
+}
+.grid_conteiner{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(6, auto);
+    grid-template-areas:
+    'el1 el1 el2'
+    'el3 el3 el3'
+    'el4 el4 el5'
+    'el6 el6 el6'
+    'el7 el8 el8' 
+    'el9 el9 el9';
+    column-gap: 1.5rem;
+}
+
+.s{margin: 4rem 0 0 0;}
+    
+
+h3{
+    font-family: 'Inter'; 
+   font-size: 1.5rem;
+   font-weight: 700;
+   width: 100%;
+}
+
+.el1 {
+    grid-area: el1;
+}
+.el2 {
+    grid-area: el2;
+    
+}
+.el3 {
+    grid-area: el3;
+
+}
+.el4 {
+    grid-area: el4;
+
+}
+.el5 {
+    grid-area: el5;
+
+}
+.el6 {
+    grid-area: el6;
+
+}
+.el7{
+    grid-area: el7;
+
+}
+.el8{
+    grid-area: el8;
+
+}
+.el9{
+    grid-area: el9;
+
+}
+.el{
+    padding: 4rem 0 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.el3,.el6,.el9{
+    padding: 1rem 0 0 0;
+}
+
