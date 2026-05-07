@@ -1,0 +1,65 @@
+@media(max-width:1400px){
+    html{font-size: 15px;}
+}
+@media(max-width:1200px){
+    html{font-size: 14px;}
+    .container{padding: 0 20px 0 ;}
+}
+@media(max-width:1000px){
+    html{font-size: 13px;}
+    .card_wraper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width:744px){
+    html{font-size: 12px;}
+    .bottom_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 7.5rem 0 0;
+    }
+    .bottom-h2{
+        text-align: center;
+    }
+    .adds{
+        text-align: center;
+        padding: 2rem 0 40px 0;
+    }
+    .add2-p{text-align: justify;}
+    .speeaker-img{
+        width: 392px;
+        height: 287px;
+    }
+    
+}
+
+@media(max-width:450px){
+    .grid_conteiner{
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(6, auto);
+    grid-template-areas:
+    'el1 el2'
+    'el3 el3'
+    'el4 el5'
+    'el6 el6'
+    'el7 el8' 
+    'el9 el9';
+    column-gap: 1.5rem;
+}
+.speaker{align-items: center;}
+}
+
+@media(max-width:320px){
+    html{font-size: 11px}
+    .speeaker-img{
+        width: 280px;
+        height: 277px;
+    }
+}
